@@ -13,7 +13,7 @@
 #include <time.h>
 
 #define SET_SIZE 100000 //Using 100,000 as base for comparison
-
+#define RANGE 100000
 #define PRINT_SET false
 
 int main()
@@ -21,7 +21,7 @@ int main()
     //Make randomized set
     int set[SET_SIZE];
     srand(time(0));
-    for(int i = 0; i < SET_SIZE; i++) set[i] = rand() % 100; 
+    for(int i = 0; i < SET_SIZE; i++) set[i] = rand() % RANGE; 
 
     int end = SET_SIZE - 1;
     for (int j = 0; j < SET_SIZE; j++) {
